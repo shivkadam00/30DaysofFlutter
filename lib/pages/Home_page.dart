@@ -10,7 +10,10 @@ class Home_page extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text("hi i am  shiv $days"),
+          child: Text(
+            "hi i am  shiv $days",
+            style: const TextStyle(fontSize: 48),
+          ),
         ),
       ),
       drawer: Drawer(),
