@@ -5,6 +5,7 @@ import 'package:flutter_app/pages/RedioBars.dart';
 import 'package:flutter_app/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'FlutterTopic/Container.dart';
+import 'FlutterTopic/Gridview.dart';
 import 'FlutterTopic/Listview.dart';
 import 'FlutterTopic/Scrolling.dart';
 import 'pages/Home_page.dart';
@@ -35,7 +36,8 @@ class Appname extends StatelessWidget {
         MyRoutes.RedioBar: (context) => RedioBars(),
         MyRoutes.Container: (context) => ContainerPage(),
         MyRoutes.Scrolling: (context) => scrolling(),
-        MyRoutes.Listview: (context) => Listview()
+        MyRoutes.Listview: (context) => Listview(),
+        MyRoutes.gridview: (context) => GridB()
       },
     );
   }

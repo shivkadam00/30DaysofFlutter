@@ -21,32 +21,6 @@ class _HomePageState extends State<HomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Radio<int>(
-                    value: 1,
-                    groupValue: _selectedOption,
-                    onChanged: (value) {
-                      setState(() {
-                        _selectedOption = value!;
-                      });
-                    },
-                  ),
-                  Text('Option 1'),
-                  SizedBox(width: 20),
-                  Radio<int>(
-                    value: 2,
-                    groupValue: _selectedOption,
-                    onChanged: (value) {
-                      setState(() {
-                        _selectedOption = value!;
-                      });
-                    },
-                  ),
-                  Text('Option 2'),
-                ],
-              ),
               ElevatedButton(
                 child: Text("Radio, Checkbox, Text"),
                 onPressed: () {
@@ -84,9 +58,9 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               ElevatedButton(
-                child: Text("Navigation"),
+                child: Text("grid"),
                 onPressed: () {
-                  print("hi");
+                  Navigator.pushNamed(context, MyRoutes.gridview);
                 },
               ),
             ],
